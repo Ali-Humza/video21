@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+background-color: whitesmoke;
+}
+.box::first-line{
+    color: red;
+}
+.boxes *{
+border: 2px solid rgb(0, 0, 0);
+}
+[data-x="primary"]{
+    padding: 30px;
+    margin: 30px;
+} */
+        /* .box:nth-child(even){
+    background-color: aqua;
+}
+.box:nth-last-child(1){
+    background-color: blueviolet;
+} */
+        ::selection {
+            background-color: rgb(0, 255, 153);
+            color: rgb(248, 5, 5);
+
+        }
+
+        .box::first-letter {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-x="primary" class="box">hey im abox</div>
+        <div data-x="primary" class="box">hey im a box</div>
+        <div data-x="primary" class="box">hey im a box</div>
+        <div data-x="primary" class="box">hey im a box</div>
+        <div data-x="primary" class="box">hey im a box</div>
+    </div>
+</body>
+
+</html>
